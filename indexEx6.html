@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Ex6_phoneView</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 0;
+      background-color: #111023;
+      margin: 0;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+    #content {
+      display: flex;
+      height: 80%;
+    }
+    #nav {
+      background-color: #c22177;
+
+      flex-grow: 1;
+      color: white;
+      /* padding: 10px 20px; */
+      padding: 30px 30px;
+      margin: 0;
+    }
+    #article {
+      flex-grow: 8;
+      background-color: white;
+      color: #111023;
+      padding: 30px 30px;
+      margin: 0;
+    }
+    #aside {
+      padding: 30px 30px;
+      margin: 0;
+      flex-grow: 1;
+      background-color: #320388;
+      color: white;
+    }
+    #footer {
+      color: white;
+      padding: 30px 30px;
+      margin: 0;
+    }
+    @media screen and (max-width: 600px) {
+      #content {
+        display: flex;
+        flex-direction: column;
+      }
+      #aside {
+        font-size: 14px;
+      }
+      #footer {
+        font-size: 14px;
+      }
+      #article {
+        font-size: 14px;
+        color: #111023;
+      }
+      #nav {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      /* #content {
+        display: flex;
+        flex-direction: column;
+      } */
+      #aside {
+        font-size: 20px;
+      }
+      #footer {
+        font-size: 20px;
+      }
+      #article {
+        font-size: 20px;
+        color: #111023;
+      }
+      #nav {
+        font-size: 20px;
+      }
+    }
+  </style>
+  <body>
+    <div id="content">
+      <h2 id="nav">Nav</h2>
+      <h2 id="article">Article</h2>
+      <h2 id="aside">Aside</h2>
+    </div>
+    <h2 id="footer">Footer</h2>
+  </body>
+</html>
