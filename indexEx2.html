@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Ex1</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111023;
+      min-height: 100vh;
+      width: 100%;
+      font-family: sans-serif;
+    }
+
+    .center > h2 {
+      color: white;
+      height: 15vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .content {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+    .article {
+      width: 80%;
+      background-color: white;
+      padding: 10px 20px;
+    }
+    aside {
+      width: 20%;
+      background-color: white;
+      padding: 10px 20px;
+    }
+    .content aside,
+    .nav {
+      color: white;
+      padding: 10px 20px;
+      margin: 0;
+    }
+    .content aside {
+      background-color: #320388;
+      padding: 10px 20px;
+    }
+    .content .nav {
+      background-color: #c22177;
+      height: 100vh;
+      width: 10%;
+    }
+    footer {
+      margin: 0;
+      color: white;
+      padding: 10px 20px;
+      height: 15vh;
+    }
+    #center {
+      height: 60vh;
+      display: flex;
+      width: 100%;
+    }
+    .center {
+      height: 70vh;
+      width: 90%;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="nav"><h2>Nav</h2></div>
+      <div class="center">
+        <h2>Header</h2>
+        <div id="center">
+          <article class="article"><h2>Article</h2></article>
+          <aside><h2>Aside</h2></aside>
+        </div>
+        <footer><h2>Footer</h2></footer>
+      </div>
+    </div>
+  </body>
+</html>
