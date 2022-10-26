@@ -5,16 +5,17 @@ body {
   font-family: sans-serif;
 }
 .container {
-  border: 1px solid;
-  border-radius: 30px;
+  /* border: 1px solid;
+  border-radius: 30px; */
   margin: 0;
   padding: 0 20px;
   width: 60%;
-  height: 60vh;
+  height: 400px;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   margin-top: 20vh;
+  /* overflow: hidden; */
 }
 
 #first {
@@ -29,6 +30,10 @@ body {
   align-items: center;
   color: white;
   line-height: 20px;
+  border: 2px solid black;
+  border-left: 2px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .first {
   padding: 0;
@@ -44,6 +49,9 @@ body {
   color: white;
   line-height: 20px;
   padding-bottom: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
 }
 .second {
   padding: 0;
@@ -52,17 +60,37 @@ body {
 #last {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  justify-content: center;
   width: 30%;
+  border: 2px solid black;
+  border-right: 2px solid black;
+  border-left-style: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+.last {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .part1 {
   background-color: rgb(207, 207, 162);
-  width: 50%;
+  /* width: 50%; */
+  height: 60%;
+  width: 100%;
 }
 .part2 {
   background-color: rgb(211, 211, 115);
+  height: 50%;
+  width: 100%;
 }
 .part3 {
   background-color: rgb(161, 161, 16);
+  height: 50%;
+  width: 100%;
 }
